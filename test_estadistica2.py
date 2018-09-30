@@ -20,6 +20,6 @@ class TestEstadistica(TestCase):
     # Ciclo TDD para que funcione con un string de N numeros
 
     def test_getArregloNNumeros(self):
-        self.assertEqual(Estadistica().getArreglo("6,7,3"), [3,3], "Tres numeros 3,1")
-        self.assertEqual(Estadistica().getArreglo("4,6,5,1"), [4,1], "Cuatro numeros 4,1")
-        self.assertEqual(Estadistica().getArreglo("9,8,2,45,10"), [5,2], "Cinco numeros 5,2")
+        self.assertEqual(Estadistica().getArreglo("6,7,3"), [3, 3], "Tres numeros 3,1")
+        self.assertEqual(Estadistica().getArreglo("4,6,5,1"), [4, 1], "Cuatro numeros 4,1")
+        self.assertEqual(Estadistica().getArreglo("9,8,2,45,10"), [5, 2], "Cinco numeros 5,2")
