@@ -9,3 +9,9 @@ class TestEstadistica(TestCase):
     def test_getArregloUnNumero(self):
             self.assertEqual(Estadistica().getArreglo("1"), [1], "Un numero")
 
+    #Ciclo TDD para que funcione con un string de 2 números
+
+    def test_getArregloDosNumeros(self):
+        self.assertEqual(Estadistica().getArreglo("1,3"), [2], "Dos numeros")
+
+
