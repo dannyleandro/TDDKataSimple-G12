@@ -9,4 +9,4 @@ class TestEstadistica(TestCase):
         self.assertEqual(Estadistica().getArreglo(""), [0, None], "cadena vacia")
 
     def test_getArregloUnNumero(self):
-        self.assertEqual(Estadistica().getArreglo("1"), [1,1], "Un numero Y UNO")
+        self.assertEqual(Estadistica().getArreglo("1"), [1, 1], "Un numero Y UNO")
