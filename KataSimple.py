@@ -1,6 +1,9 @@
 class Estadistica:
 
     def getArreglo(self, cadena):
-        length = len(cadena)
+        # length = len(cadena)
         #cadena = [length]
-        return [0]
+        if cadena == '':
+            return [0]
+        else:
+            return [int(cadena)]
