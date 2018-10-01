@@ -4,7 +4,7 @@ class Estadistica:
         result = cadena.split(',')
         min = 9999
         if cadena == '':
-            return [0, None]
+            return [0, None, None]
         else:
             for x in result:
                 if int(x) < min:
