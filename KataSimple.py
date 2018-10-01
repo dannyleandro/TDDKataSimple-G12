@@ -8,6 +8,11 @@ class Estadistica:
             return [0, None, None, None]
         elif len(result) == 1:
             return [1, int(cadena), int(cadena), int(cadena)]
+        elif len(result) == 2:
+            if int(result[0]) > int(result[1]):
+                return [2, int(result[1]), int(result[0]), (int(result[0])+int(result[1]))/2]
+            else:
+                return [2, int(result[0]), int(result[1]), (int(result[0])+int(result[1]))/2]
         else:
             for x in result:
                 if int(x) < min:
