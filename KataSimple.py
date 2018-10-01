@@ -5,6 +5,8 @@ class Estadistica:
         min = 9999
         if cadena == '':
             return [0, None, None]
+        elif len(result) == 1:
+            return [1, int(cadena), int(cadena)]
         else:
             for x in result:
                 if int(x) < min:
