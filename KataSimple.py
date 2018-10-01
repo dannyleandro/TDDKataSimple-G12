@@ -5,7 +5,7 @@ class Estadistica:
         min = 9999
         max = 0
         if cadena == '':
-            return [0, None, None]
+            return [0, None, None, None]
         else:
             for x in result:
                 if int(x) < min:
